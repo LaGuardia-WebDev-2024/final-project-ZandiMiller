@@ -5,62 +5,126 @@
     <title>Final Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
-      /* Styling Only Related To THIS Page */
-      .parent-flex {
-        display: flex;
-        background-color: purple;
-        justify-content: space-around;
-        padding: 10px;
-        margin-bottom: 20px;
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding-top: 80px;
       }
 
-      .parent-flex img {
-        max-width: 30%;
+      .nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: #222;
+        overflow: hidden;
+        list-style: none;
+        margin: 0;
+        padding: 10px 0;
+        z-index: 1000;
+      }
+
+      .nav li {
+        display: inline;
+        padding: 0 15px;
+      }
+
+      .nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .nav a.active {
+        text-decoration: underline;
+      }
+
+      h1 {
+        margin-bottom: 40px;
+      }
+
+      .photo-row {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 40px;
+      }
+
+      .photo-row img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        border: 4px solid white;
         border-radius: 10px;
+      }
+
+      .text-box {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        width: 80%;
+        max-width: 700px;
+        margin: 0 auto 60px auto;
+        border-radius: 10px;
+        text-align: left;
       }
     </style>
   </head>
   <body>
-    <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul class="nav">
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
-      <li><a class="active" href="art.html">Art</a></li>
+      <li><a class="active" href="art.html">Performance</a></li>
       <li><a href="resume.html">Resume</a></li>
+
       <li style="float: right">
-        <a target="_blank" href=""
-          ><img
+        <a target="_blank" href="https://www.youtube.com/@zandimiller">
+          <img
             src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
             style="width: 25px; margin: -5px"
-        /></a>
+            alt="YouTube"
+          />
+        </a>
       </li>
+
       <li style="float: right">
-        <a target="_blank" href=""
-          ><img
+        <a target="_blank" href="https://www.instagram.com/zandimiller/">
+          <img
             src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
             style="width: 25px; margin: -5px"
-        /></a>
+            alt="Instagram"
+          />
+        </a>
       </li>
     </ul>
-    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>My Art</h1>
 
-    <div class="parent-flex">
+    <h1>PERFORMANCE</h1>
+
+    <div class="photo-row">
       <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
+        src="https://cdn.glitch.global/189aa90f-39a7-46d8-9e9f-cd887b92d303/535E8FAF-C03F-4AB8-AC07-8914AA1032DC.JPG?v=17495871429012"
+        alt="Zandi singing"
       />
       <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
+        src="https://cdn.glitch.global/189aa90f-39a7-46d8-9e9f-cd887b92d303/IMG_7609.jpeg?v=1749586187932"
+        alt="Zandi musical theater"
       />
     </div>
 
-    <div class="parent-flex">
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-      />
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-      />
+    <div class="text-box">
+      <p>
+        Driven by a love for music and singing, Zandi's journey into acting
+        began unexpectedly. Initially believing that everyone was naturally
+        gifted at singing, he realized his own talent in fifth grade when a new
+        music teacher allowed students to audition for solos in seasonal
+        concerts. This experience motivated him to pursue entertainment, leading
+        him to join the choir despite previous reservations. The performance
+        opportunities and solos he gained fueled his passion for music and
+        served as a gateway to his acting career, particularly in musical
+        theater.
+      </p>
     </div>
   </body>
 </html>

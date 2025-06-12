@@ -6,10 +6,10 @@ Requirements
 [  ] Customized HTML Page #4
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Google Font
+[ yes ] Feature 1 - Google Font
 [ no ] Feature 2 - Upload a Font
 [ no ] Feature 3 - Include jQuery
-[ no ] Feature 4 - Embed Code from Spotify/Google Docs/YouTube
+[ yes ] Feature 4 - Embed Code from google drive
 [ no ] Feature 5 - Customized HTML Page #5
 -->
 
@@ -17,96 +17,142 @@ Select ONE Additional Feature to Add
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Final Project</title>
+    <title>Zandi Miller</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      /* Styling Only Related To THIS Page */
-      /*~~~~~ Taken From:
-      https://www.w3schools.com/howto/howto_css_parallax.asp*/
-      .parallax {
-        /* The image used */
-        background-image: url("https://cdn.glitch.global/66249578-345e-4e9c-8fac-cabe98f682e4/image0.jpeg?v=1747657278943");
-
-        /* Set a specific height */
-        min-height: 500px;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .textblock {
-        min-height: 500px;
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
         background-color: black;
         color: white;
       }
-      .parent-flex {
+
+      .top-heading {
+        text-align: center;
+        font-family: "Playfair Display", serif;
+        font-size: 4em;
+        padding: 40px 20px 20px 20px;
+        background-color: black;
+        color: white;
+      }
+
+      .photo-container {
         display: flex;
+        justify-content: center;
+        padding: 30px;
+        background-color: black;
       }
-      .child-flex {
-        background-color: green;
-        margin: 30px;
-        padding: 10px;
-        text-align: justify;
-        width: 40%;
+
+      .photo-container img {
+        width: 90%;
+        max-width: 600px;
+        border: 8px solid white;
+        border-radius: 12px;
       }
-      .para-1{
+
+      .textblock {
+        min-height: 300px;
+        background-color: black;
         display: flex;
         align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .textblock p {
+        max-width: 800px;
+        line-height: 1.6;
+        font-family: "Raleway", sans-serif;
+        font-size: 1.1em;
+      }
+
+      ul.nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        overflow: hidden;
+        background-color: #000;
+      }
+
+      ul.nav li {
+        float: left;
+      }
+
+      ul.nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      ul.nav li a:hover {
+        background-color: #444;
+      }
+
+      ul.nav li a.active {
+        background-color: #888;
+      }
+
+      ul.nav li img {
+        vertical-align: middle;
       }
     </style>
   </head>
   <body>
-    <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul class="nav">
       <li><a class="active" href="index.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
       <li><a href="art.html">Art</a></li>
       <li><a href="resume.html">Resume</a></li>
+
       <li style="float: right">
-        <a target="_blank" href=""
-          ><img
+        <a target="_blank" href="https://www.youtube.com/@zandimiller">
+          <img
             src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
             style="width: 25px; margin: -5px"
-        /></a>
+            alt="YouTube"
+          />
+        </a>
       </li>
+
       <li style="float: right">
-        <a target="_blank" href=""
-          ><img
+        <a target="_blank" href="https://www.instagram.com/zandimiller/">
+          <img
             src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
             style="width: 25px; margin: -5px"
-        /></a>
+            alt="Instagram"
+          />
+        </a>
       </li>
     </ul>
 
-    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Ms. Hall | Web Dev 2024-2025</h1>
-    <div class="parallax"></div>
+    <div class="top-heading">ZANDI MILLER</div>
 
-    <div class="textblock parent-flex">
-      <div class="child-flex para-1">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
+    <div class="photo-container">
+      <img
+        src="https://cdn.glitch.global/189aa90f-39a7-46d8-9e9f-cd887b92d303/ZANDI%20MILLER%20SITTING%20ON%20CHAIR.jpg?v=1749580385869"
+        alt="Zandi Miller Headshot"
+      />
+    </div>
+
+    <div class="textblock">
+      <p>
+        Zandi Miller, an 18-year-old aspiring actor, honed his skills at
+        LaGuardia for Acting and is set to further his education at Howard
+        University’s Chadwick Boseman College of Fine Arts. Since the age of 10,
+        Zandi has pursued his passion for the entertainment industry, starting
+        with solos in concerts, progressing to small theater productions, and
+        eventually taking on larger roles at LaGuardia Arts. His notable
+        performances include the all-school musical "The Addams Family," his
+        one-act play "The Good Place," and his recent role in "Peter and The
+        Starcatcher."
+      </p>
     </div>
   </body>
 </html>
